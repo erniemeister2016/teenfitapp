@@ -1,0 +1,7 @@
+{
+  "name": "Teen_Fit",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
