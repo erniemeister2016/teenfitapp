@@ -1,11 +1,23 @@
 <ion-header>
-  <ion-toolbar color="secondary">
+  <ion-toolbar color="success">
     <ion-title class="Title">
       Teen Fit
     </ion-title>
+    
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content color="warning"> 
+<img src="../../assets/teen.jpg" class="Guy">
+<p class="p">
+  Welcome back Anthony!
+</p>
+<img src="../../assets/images.jpeg" class="Bot">
+<img src="../../assets/images-2.jpeg" class="boi">
+<img src="../../assets/teenager-425x239.jpg" class="Boy">
+<div class="gallery-button" text-center>
+    <img [src]="imageSrc" />    
+  <ion-icon name="images" on-tap="openGallery()"></ion-icon>
+  <p>Choose a Photo</p>  
+</div>
 </ion-content>
