@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>
+        Ionic + AWS
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+   
+  <ion-content padding>
+    <h3 [hidden]="images.length !== 0" text-center>No Images found!</h3>
+   
+    <ion-list>
+      <ion-card *ngFor="let img of images; let i = index">
+        <img [src]="img.url">
+        <button ion-button full color="danger" [style.margin]="0" *ngIf="edit" (click)="deleteImage(i)">
+                <ion-icon name="trash"></ion-icon>
+              </button>
+      </ion-card>
+    </ion-list>
+   
+    <ion-fab right bottom>
+      <button ion-fab (click)="presentActionSheet()">
+         <ion-icon name="camera"></ion-icon>
+        </button>
+    </ion-fab>
+  </ion-content>
+
+  
